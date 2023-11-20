@@ -8,7 +8,7 @@ import {
   Button,
   LinkText,
   LinkButton
-} from '../../../../styles/identify/register/Register.Styles'; // Atualize o caminho conforme necessário
+} from '../../../../styles/identify/login/Login.Styles'; // Atualize o caminho conforme necessário
 
 export default function Login() {
   return (
