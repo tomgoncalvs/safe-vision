@@ -1,5 +1,6 @@
 "use client"
 import React from 'react';
+import Link from 'next/link';
 import {
   DashboardContainer,
   WelcomeText,
@@ -31,7 +32,9 @@ export default function Dashboard() {
          <WelcomeSection>
         <AppName>Safe Vision</AppName>
         <WelcomeText>Bem-Vindo Ewerton!</WelcomeText>
+        <Link href="/logado/select" passHref>
         <CallToAction></CallToAction> 
+        </Link>
       </WelcomeSection>
       
       <HospitalList>

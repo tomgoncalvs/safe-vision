@@ -22,7 +22,7 @@ export default function Home() {
       </ImageContainer>
       <Heading>Seja Bem-Vindo ao Safe Vision</Heading>
       <Subheading>Tenha um pré diagnóstico da saúde dos seus olhos com apenas alguns cliques.</Subheading>
-      <Button href="#">{'>'}</Button>
+      <Button href="/identify">{'>'}</Button>
     </Container>
   );
 }

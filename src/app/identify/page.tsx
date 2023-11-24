@@ -8,7 +8,7 @@ import {
   RoleContainer,
   RoleButton,
   Icon,
-  NextButton,
+  Button,
   ImageContainer
 } from '../../../styles/identify/Identify.Styles'; // Atualize o caminho conforme necessário
 
@@ -35,7 +35,7 @@ export default function Identification() {
           Paciente
         </RoleButton>
       </RoleContainer>
-      <NextButton>{'>'}</NextButton>
+      <Button href="/identify/login/person">{'>'}</Button>
     </PageContainer>
   );
 }
