@@ -62,17 +62,17 @@ export const Icon = styled.img`
   margin-bottom: 1rem;
 `;
 
-export const NextButton = styled.button`
+export const Button = styled.a`
   background-color: #2E46B7;
   color: white;
   padding: 1rem 2rem;
   border-radius: 10px;
-  border: none;
-  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
 
   &:hover {
     background-color: #6880F3;
   }
 `;
 
-// Adicione quaisquer outros estilos necessários para sua página aqui.
