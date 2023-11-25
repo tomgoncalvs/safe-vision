@@ -19,7 +19,7 @@ export const ResultTitle = styled.h1`
 `;
 
 export const ResultBox = styled.div`
-  background: #f0f0f0;
+  background: #ececf3;
   padding: 1rem;
   margin-bottom: 2rem;
 `;
@@ -35,7 +35,7 @@ export const Recommendation = styled.p`
   margin: 0.5rem 0;
 `;
 
-export const AccreditedNetworkButton = styled.a`
+export const RedeCredenti = styled.a`
   background-color: #2e46b7;
   color: white;
   padding: 1rem 2rem;
@@ -49,5 +49,19 @@ export const AccreditedNetworkButton = styled.a`
 
   &:hover {
     background-color: #6880f3;
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  margin: 2rem 0;
+  text-align: center;
+`;
+
+export const Image = styled.img`
+  max-width: 400px;
+  height: auto;
+
+  @media (max-width: 480px) {
+    max-width: 100%;
   }
 `;

@@ -39,7 +39,7 @@ export const RoleButton = styled.button`
   display: flex;
   flex-direction: column;
   background-color: #f7f7f7;
-  border: 1px solid #ddd;
+  border: ${props => props.isSelected ? '3px solid #2E46B7' : '1px solid #ddd'};
   border-radius: 10px;
   padding: 2rem;
   margin-bottom: 1rem;
@@ -53,8 +53,6 @@ export const RoleButton = styled.button`
   &:active {
     background-color: #e7e7e7;
   }
-  &:hover {
-    border: 3px solid #ccc;
   }
 `;
 
