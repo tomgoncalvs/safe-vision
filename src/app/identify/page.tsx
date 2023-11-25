@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import {
   PageContainer,
@@ -10,10 +10,17 @@ import {
   Icon,
   Button,
   ImageContainer
-} from '../../../styles/identify/Identify.Styles'; // Atualize o caminho conforme necessário
+} from '../../../styles/identify/Identify.Styles'; 
+import Link from 'next/link';
+
+
 
 export default function Identification() {
+  
+  const [selectedRole, setSelectedRole] = useState('');
+
   return (
+
     <PageContainer>
         <ImageContainer>
         <Image 
@@ -26,16 +33,26 @@ export default function Identification() {
       <Title>Vamos começar!</Title>
       <Subtitle>Antes de tudo, precisamos identificar você, siga o passo a seguir.</Subtitle>
       <RoleContainer>
-        <RoleButton>
+        <RoleButton 
+          onClick={() => setSelectedRole('doctor')}
+          isSelected={selectedRole === 'doctor'}
+        >
           <Icon src="images/icons/Doctor.png" alt="Ícone de médico" />
           Médico
         </RoleButton>
-        <RoleButton>
+        <RoleButton 
+          onClick={() => setSelectedRole('person')}
+          isSelected={selectedRole === 'person'}
+        >
           <Icon src="images/icons/Businessman.png" alt="Ícone de paciente" />
           Paciente
         </RoleButton>
       </RoleContainer>
-      <Button href="/identify/login/person">{'>'}</Button>
+      {selectedRole && (
+        <Link href={`/identify/login/${selectedRole === 'doctor' ? 'doctor' : 'person'}`}>
+          <Button>{'>'}</Button>
+        </Link>
+      )}
     </PageContainer>
   );
 }
