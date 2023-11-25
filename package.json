@@ -21,6 +21,10 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.3",
     "typescript": "^5"
+<<<<<<< HEAD
   },
   "proxy": "http://127.0.0.1:8090"
+=======
+  }
+>>>>>>> cfb0b91183e601f478f458524efd5c660d59e193
 }
