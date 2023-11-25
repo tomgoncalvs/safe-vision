@@ -85,7 +85,7 @@ const PatientSelectionPage = () => {
       {patients.map((patient) => (
         <Link href={`/logado/lefteye`} passHref key={patient.id}>
           {/* Caso a API esteja conectada utilize a opção abaixo: */}
-          {/* <Link href={`/logado/lefteye/${patient.id}`} passHref key={patient.id}></Link> */}
+          <Link href={`/logado/lefteye/${patient.id}`} passHref key={patient.id}></Link>
           <PatientCard>
             <PatientIcon src="/images/icons/face-icon.png" alt="Ícone do Paciente" />
             <PatientInfo>

@@ -34,7 +34,7 @@ const InstructionsPage = () => {
           console.error('Failed to upload:', await response.text());
         }
       } catch (error) {
-        {/*alert('API está desligada. Você continuara o fluxo normalmente nesta DEMO.');*/}
+        alert('API está desligada. Você continuara o fluxo normalmente nesta DEMO.');
         window.location.href = '/logado/righteye';
       }
     }

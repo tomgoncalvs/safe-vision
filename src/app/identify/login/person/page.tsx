@@ -51,8 +51,9 @@ export default function Login() {
       }
     } catch (error) {
       window.location.href = '/logado';
-      {/* Caso a API esteja conectada utilize a opção abaixo: alert('API está desligada. Utilize a função abaixo do botão "Entre sem Autenticar".');
-      console.error('Erro na requisição:', error);*/}
+      {/* Caso a API esteja conectada utilize a opção abaixo:*/}
+      alert('API está desligada. Utilize a função abaixo do botão "Entre sem Autenticar".');
+      console.error('Erro na requisição:', error);
     }
   };
 
